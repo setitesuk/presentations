@@ -22,7 +22,9 @@ A brief explanation:
 
   Another great feature of Perl is that once you know a bit, you can do a lot without knowing everything.
 
-hello_world.pl:
+Running a perl program:
+
+  hello_world.pl
 
   Introduce how a script is constructed and runs
     Produce a hello world script
