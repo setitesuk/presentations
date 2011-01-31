@@ -142,87 +142,87 @@ my %codes_per_amino_acid = (
 my %genetic_code_data = (
   'Alanine' => {
     '3_letter_code' => 'Ala',
-    'codons' => [ 'GCA', 'GCC', 'GCG', 'GCT', 'GCA', 'GCC', 'GCG', 'GCT' ]
+    'codons' => [ 'GCA', 'GCC', 'GCG', 'GCT' ]
   },
   'Arginine' => {
     '3_letter_code' => 'Arg',
-    'codons' => [ 'AGA', 'AGG', 'CGA', 'CGC', 'CGG', 'CGT', 'AGA', 'AGG', 'CGA', 'CGC', 'CGG', 'CGT' ]
+    'codons' => [ 'AGA', 'AGG', 'CGA', 'CGC', 'CGG', 'CGT' ]
   },
   'Asparagine' => {
     '3_letter_code' => 'Asn',
-    'codons' => [ 'AAC', 'AAT', 'AAC', 'AAT' ]
+    'codons' => [ 'AAC', 'AAT' ]
   },
   'Aspartic acid' => {
     '3_letter_code' => 'Asp',
-    'codons' => [ 'GAC', 'GAT', 'GAC', 'GAT' ]
+    'codons' => [ 'GAC', 'GAT' ]
   },
   'Cysteine' => {
     '3_letter_code' => 'Cys',
-    'codons' => [ 'TGC', 'TGT', 'TGC', 'TGT' ]
+    'codons' => [ 'TGC', 'TGT' ]
   },
   'Glutamic acid' => {
     '3_letter_code' => 'Glu',
-    'codons' => [ 'GAA', 'GAG', 'GAA', 'GAG' ]
+    'codons' => [ 'GAA', 'GAG' ]
   },
   'Glutamine' => {
     '3_letter_code' => 'Gln',
-    'codons' => [ 'CAA', 'CAG', 'CAA', 'CAG' ]
+    'codons' => [ 'CAA', 'CAG' ]
   },
   'Glycine' => {
     '3_letter_code' => 'Gly',
-    'codons' => [ 'GGA', 'GGC', 'GGG', 'GGT', 'GGA', 'GGC', 'GGG', 'GGT' ]
+    'codons' => [ 'GGA', 'GGC', 'GGG', 'GGT' ]
   },
   'Histidine' => {
     '3_letter_code' => 'His',
-    'codons' => [ 'CAC', 'CAT', 'CAC', 'CAT' ]
+    'codons' => [ 'CAC', 'CAT' ]
   },
   'Isoleucine' => {
     '3_letter_code' => 'Ile',
-    'codons' => [ 'ATA', 'ATC', 'ATT', 'ATA', 'ATC', 'ATT' ]
+    'codons' => [ 'ATA', 'ATC', 'ATT' ]
   },
   'Leucine' => {
     '3_letter_code' => 'Leu',
-    'codons' => [ 'CTA', 'CTC', 'CTG', 'CTT', 'TTA', 'TTG', 'CTA', 'CTC', 'CTG', 'CTT', 'TTA', 'TTG' ]
+    'codons' => [ 'CTA', 'CTC', 'CTG', 'CTT', 'TTA', 'TTG' ]
   },
   'Lysine' => {
     '3_letter_code' => 'Lys',
-    'codons' => [ 'AAA', 'AAG', 'AAA', 'AAG' ]
+    'codons' => [ 'AAA', 'AAG' ]
   },
   'Methionine' => {
     '3_letter_code' => 'Met',
-    'codons' => [ 'ATG', 'ATG' ]
+    'codons' => [ 'ATG' ]
   },
   'Phenylalanine' => {
     '3_letter_code' => 'Phe',
-    'codons' => [ 'TTC', 'TTT', 'TTC', 'TTT' ]
+    'codons' => [ 'TTC', 'TTT' ]
   },
   'Proline' => {
     '3_letter_code' => 'Pro',
-    'codons' => [ 'CCA', 'CCC', 'CCG', 'CCT', 'CCA', 'CCC', 'CCG', 'CCT' ]
+    'codons' => [ 'CCA', 'CCC', 'CCG', 'CCT' ]
   },
   'Serine' => {
     '3_letter_code' => 'Ser',
-    'codons' => [ 'AGC', 'AGT', 'TCA', 'TCC', 'TCG', 'TCT', 'AGC', 'AGT', 'TCA', 'TCC', 'TCG', 'TCT' ]
+    'codons' => [ 'AGC', 'AGT', 'TCA', 'TCC', 'TCG', 'TCT' ]
   },
   'Stop' => {
     '3_letter_code' => undef,
-    'codons' => [ 'TAA', 'TAG', 'TGA', 'TAA', 'TAG', 'TGA' ]
+    'codons' => [ 'TAA', 'TAG', 'TGA' ]
   },
   'Threonine' => {
     '3_letter_code' => 'Thr',
-    'codons' => [ 'ACA', 'ACC', 'ACG', 'ACT', 'ACA', 'ACC', 'ACG', 'ACT' ]
+    'codons' => [ 'ACA', 'ACC', 'ACG', 'ACT' ]
   },
   'Tryptophan' => {
     '3_letter_code' => 'Trp',
-    'codons' => [ 'TGG', 'TGG' ]
+    'codons' => [ 'TGG' ]
   },
   'Tyrosine' => {
     '3_letter_code' => 'Tyr',
-    'codons' => [ 'TAC', 'TAT', 'TAC', 'TAT' ]
+    'codons' => [ 'TAC', 'TAT' ]
   },
   'Valine' => {
     '3_letter_code' => 'Val',
-    'codons' => [ 'GTA', 'GTC', 'GTG', 'GTT', 'GTA', 'GTC', 'GTG', 'GTT' ]
+    'codons' => [ 'GTA', 'GTC', 'GTG', 'GTT' ]
   }
 );
 
