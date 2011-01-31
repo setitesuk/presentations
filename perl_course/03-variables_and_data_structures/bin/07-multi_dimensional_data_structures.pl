@@ -236,7 +236,7 @@ my @multiplication_table = (
   [ qw{ 0 4 8 12 16 20 24 28 32 36 40 } ],
 );
 
-say $multiplication_table[0][3];
+say $multiplication_table[3][5]; # obviously you would do 'say 3*5;' rather than store this in memory
 
 # the array @table_data contains an array of array_refs, each one a row from a table
 
