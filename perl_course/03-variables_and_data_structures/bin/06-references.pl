@@ -83,3 +83,15 @@ delete $hash_ref->{'lead vocals'}; # RIP Freddie
 say %original_hash;
 
 # as with scalar and array, we have changed to original hash in memory
+
+# instantiate an anonymous array (scalar with a reference to an unamed array) like this
+
+my $anon_array_ref = [];
+say $anon_array_ref;
+
+# and instantiate an anonymous hash (scalar with a reference to an unamed hash) like this
+
+my $anon_hash_ref = {};
+say $anon_hash_ref;
+
+# these will be important for 07
