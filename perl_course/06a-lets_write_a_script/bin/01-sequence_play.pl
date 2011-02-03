@@ -25,9 +25,10 @@ my $sequence_3 = 'CAGGCATGCCGAGACCGATATAGTTAACAATAATATA';
 #    ...
 #  );
 
+# 6) Let the user enter a codon to exchange methionine for in sequence_1, and switch it
+# Bonus points for challenging a non-dna base letter
 
-
-# 6) BONUS: assuming sequence is always read 5' to 3', can you print out the reverse complement
+# 7) BONUS: assuming sequence is always read 5' to 3', can you print out the reverse complement
 # in the order it is read of each sequence (hint, there is a reverse function, and you
 # you will need an extra assignment step, or the word scalar in front of it)
 

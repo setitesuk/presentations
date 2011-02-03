@@ -77,8 +77,23 @@ foreach my $seq ( $sequence_1, $sequence_2, $sequence_3 ) {
 
 use Test::More; diag explain \%codon_in_sequences;
 
+# 6) Let the user enter a codon to exchange methionine for in sequence_1, and switch it
+# Bonus points for challenging a non-dna base letter
 
-# 6) BONUS: assuming sequence is always read 5' to 3', can you print out the reverse complement
+print 'Enter a codon you would like to swap methionine (atg) for: ';
+my $user_codon = <STDIN>;
+chomp $user_codon;
+
+while ( $user_codon =~ m/[bd-fi-su-z]/ixms ) {
+  print 'The codon you entered contains non_dna bases. Please try again: ';
+  $user_codon = <STDIN>;
+  chomp $user_codon;
+}
+
+$sequence_1 =~ s/atg/$user_codon/ixms;
+say $sequence_1;
+
+# 7) BONUS: assuming sequence is always read 5' to 3', can you print out the reverse complement
 # in the order it is read of each sequence (hint, there is a reverse function, and you
 # you will need an extra assignment step, or the word scalar in front of it)
 
