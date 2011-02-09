@@ -1,0 +1,25 @@
+Unfortunately, a big problem exists with arrays. You often have to remember at what index everything is
+
+i.e.
+
+my @personal_info = ( qw{Andy Brown 180 brown blue} );
+
+I could conceivably have blue hair (dye) and what is the 180 for.
+And depending on who has written the code or what country we are in, Andy could be a forename or a surname.
+
+Thankfully we have associative arrays, or hashes.
+
+Hashes give a name to each element, rather than an index, so we can use this to get the data.
+
+my %personal_info = (
+  forename => 'Andy',
+  surname  => 'Brown',
+  height   => '180',
+  hair     => 'brown',
+  eyes     => 'blue',
+);
+
+
+To access the data, we then write a similar scalar request to the array one.
+
+say $personal_info{forename};

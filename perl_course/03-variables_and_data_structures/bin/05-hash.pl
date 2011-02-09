@@ -2,6 +2,20 @@
 
 use Modern::Perl;
 
+### intro
+
+my %personal_info = (
+  forename => 'Andy',
+  surname  => 'Brown',
+  height   => '180',
+  hair     => 'brown',
+  eyes     => 'blue',
+);
+
+say $personal_info{forename};
+
+### 2 methods of assignment
+
 # unclear assignment, but shows can be constructed like an array
 my %string_key_and_value_hash = qw{key1 val1 key2 val2 key3 val3};
 
