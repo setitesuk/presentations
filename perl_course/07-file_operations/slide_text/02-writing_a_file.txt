@@ -1,0 +1,19 @@
+### writing a file
+
+# we looked at the data source file, but you are going to want your results to go somewhere else, and are
+# likely to want to store them in a file.
+
+use File::Slurp;
+
+# In bin/02-writing_a_file.pl we have an array of sequences (they would have been generated in some way),
+# that we want stored into a file.
+
+write_file( 'data/short_reads.seq', @sequences );
+
+# check the file data/short_reads.seq. You'll see all the reads are now in there, ready to be passed on,
+# archived, processed further...
+
+
+
+
+
