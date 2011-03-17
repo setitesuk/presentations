@@ -13,7 +13,7 @@ A brief explanation:
 
   Larry produced Perl1 by ripping apart Awk in 1987
   Most commonly used version 5.8.8 but 5.8.x is approx 10 years old
-  Now entering a yearly release cycle, starting with 5.12 this year (5.10.1 previous stable version), 5.14 is this year
+  Now entering a yearly release cycle, starting with 5.12 in 2010 (5.10.1 previous stable version), 5.14 is this year
 
   Went through a period of being the language for bioinformatics, web development and systems administration. There is plenty
   of support for all of these, and it has been a major language on site.
@@ -29,26 +29,26 @@ Running a perl program:
   Introduce how a script is constructed and runs
     Produce a hello world script
 
-  Errors (p190, p178)
+  Errors (p126, p119)
     Show errors by making a script which doesn't run
 
-Variables: (p21)
+Variables: (p14)
 
-  Numbers and Maths functions (p31)
+  Numbers and Maths functions (p20)
     Integer is a number
-    doing math functions (p90)
+    doing math functions (p60)
     ++
     0 is false
-  Strings (p23)
+  Strings (p15)
     any sequence of characters quoted
     numbers can be strings
-    concatenation (p90)
+    concatenation (p61)
     empty string is false
-  Scalars (p51), Arrays (p54), Hashes (p60)
+  Scalars (p35), Arrays (p36), Hashes (p40)
     How to assign/declare
     Benefits
     my/our
-    undef (p32)
+    undef (p21)
       it is false
       warnings if you try to do any string or number operations on it
   References
@@ -57,7 +57,7 @@ Variables: (p21)
       pointer to the memory location that contains the information
     Dereferencing
       It's how we retrieve the information in the reference
-    Multilevel Data Structures (p82)
+    Multilevel Data Structures (p55)
       Create a table, headed and not
     What are the benefits of using them?
       Can reduce memory compared to copying
@@ -70,7 +70,7 @@ IO:
 
     @ARGV
       Command line arguments
-    STDIN (p193)
+    STDIN (p129)
       Interaction with the program as it runs
     DATA
       Data input found at the end of a file
@@ -83,7 +83,7 @@ IO:
     STDERR
       The default place where error and warning messages are sent to
 
-Regular Expressions: (p131)
+Regular Expressions: (p89)
 
   The syntax
     my $sequence =~ m/aaa/ixms;
@@ -96,14 +96,14 @@ Regular Expressions: (p131)
 
 Decision Making
 
-  Control Flow (p34)
+  Control Flow (p23)
     if/else
     while
     operators && || //
     eq/ne ==/!=
     my $value = x ? y : z;
 
-File operations: (p193)
+File operations: (p129)
 
   File::Slurp
     Reading from a file
@@ -111,7 +111,7 @@ File operations: (p193)
 
   Can be done without File::Slurp, how to 'open'/'close'
 
-Functions: (p93)
+Functions: (p63)
 
   What is a function?
     keywords are functions - they do something i.e. print, open, readFile, writeFile
@@ -133,7 +133,7 @@ Functions: (p93)
     count_a, count_c, count_g, count_t, count_n
     This example is a bit of overkill, but principle is shown
 
-Modules: (p21)
+Modules: (p14)
 
   What is a module?
     .pm file
@@ -157,11 +157,11 @@ Modules: (p21)
       Default export
       Optional export
 
-  CPAN (p15)
+  CPAN (p10)
     Someone has probably done it before you
 
 
-Objects: (p148)
+Objects: (p100)
 
   What is an object?
     How does it differ from a Module
@@ -194,7 +194,7 @@ The combination of scripts, modules and objects
     What part might be suited to which?
     Why that might be?
 
-Testing: (p184)
+Testing: (p123)
 
   What is a test?
     Something which can check you get expected outputs from given inputs

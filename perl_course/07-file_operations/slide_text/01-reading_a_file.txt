@@ -59,7 +59,7 @@ foreach my $read ( @reads ) {
 
 # open a file handle to the file you want to read
 
-open ( my $fh, '<', 'data/the_slobbit' ) or die 'Could not open data/the_slobbit for reading';
+open my $fh, '<', 'data/the_slobbit' or die 'Could not open data/the_slobbit for reading';
 
 # $fh is a file handle
 # '<' means for reading only

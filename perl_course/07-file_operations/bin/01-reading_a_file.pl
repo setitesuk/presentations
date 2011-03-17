@@ -36,7 +36,7 @@ foreach my $read ( @reads ) {
 
 ### open a file handle to the file you want to read
 
-open ( my $fh, '<', 'data/the_slobbit' ) or die 'Could not open data/the_slobbit for reading';
+open my $fh, '<', 'data/the_slobbit' or die 'Could not open data/the_slobbit for reading';
 
 while ( <$fh> ) {
   s/Gran/Uncle/xms;
