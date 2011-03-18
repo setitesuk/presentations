@@ -1,0 +1,3 @@
+### Creating an object
+
+First and foremost, an object is a package, more usually referred to as a class. However, what that means is that the code is stored as a module.

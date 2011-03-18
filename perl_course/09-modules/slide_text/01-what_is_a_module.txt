@@ -131,5 +131,15 @@ and then modify our script to use DnaHelpersExtended (see bin/01-without_many.pl
 
 If we run that, it works.
 
+Most (all worthwhile) reusable code is found in modules. The greatest source of these are found
+on the Comprehensive Perl Archive Network (CPAN). If we get time later on, we'll look at how to
+download off the CPAN, but chances are, if you need to do it, someone has already written a module
+to do it. Everything on the CPAN is free for you to download and use in your own projects. It is 
+also worth noting that there are extensive bioperl tools there, so most of what we are doing is
+actually re-inventing the wheel.
+
+Search for it, and then find it and use it, or write it and submit it back.
+
+
 
 
