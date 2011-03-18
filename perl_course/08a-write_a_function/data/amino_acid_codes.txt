@@ -1,9 +1,9 @@
 Alanine Ala GCA GCC GCG GCT 
 Arginine Arg AGA AGG CGA CGC CGG CGT 
 Asparagine Asn AAC AAT 
-Aspartic acid Asp GAC GAT 
+Aspartic_acid Asp GAC GAT 
 Cysteine Cys TGC TGT 
-Glutamic acid Glu GAA GAG 
+Glutamic_acid Glu GAA GAG 
 Glutamine Gln CAA CAG 
 Glycine Gly GGA GGC GGG GGT 
 Histidine His CAC CAT 
