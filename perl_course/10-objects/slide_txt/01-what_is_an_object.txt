@@ -18,7 +18,7 @@ Many other languages are considered Object Oriented, they like everything to be 
 
 Object
 
-cup - contains water, teabag, milk, sugar, lemon
+cup - contains water, teabag, milk, sugar, lemon (attributes)
     - has methods add_water, add_teabag, add_milk, add_sugar, add_lemon, remove_teabag, drink, stir_with_spoon
 
 kettle - contains water
