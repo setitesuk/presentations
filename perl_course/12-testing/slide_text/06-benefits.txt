@@ -1,0 +1,13 @@
+Benefits.
+
+Having tests gives you a confidence that the work you have produced is
+
+reliable - you have tested what happens if different parameters are given
+maintainable - if you want to modify the code (add more features, refactor) then if your tests still pass
+you know that you haven't broken it
+
+So what.
+
+Well, what that leads onto is the idea of Test Driven Development. You know what you want your code to do, so write a test which will see if it can do it, and then write the code to do it. If you do that, then you can follow that your code is heading in the right direction.
+
+Now we'll move onto a topic which won't be helped by Tests, but has kept the popularity of perl alive with systems administrators.

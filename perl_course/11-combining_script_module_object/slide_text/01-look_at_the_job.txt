@@ -14,7 +14,9 @@ b) Keep the code flow sensible - As you read down your script, you should be abl
 
 c) If you need to write the same code multiple times, see if you can put it into a sensibly named function
 
-d) Only keep code which cannot be used elsewhere in the script
+d) Only keep code which cannot be used elsewhere, in the script
+
+e) any interactivity is best kept to the script
 
 2) Module
 
