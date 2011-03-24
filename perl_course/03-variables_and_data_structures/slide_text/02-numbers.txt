@@ -1,3 +1,5 @@
+Slide 4
+
 In this, we are going to work through bin/01-integer.pl, looking at each statement, trying to describe what we are doing with the numbers.
 (Note, In order to see what we are doing, Perl needs to be told to print the output, so we will 'say' everything)
 
@@ -8,6 +10,12 @@ If you think back to the error we got when we tried to use the say function with
 Unquoted string "say" may clash with future reserved word at bin/brave_new_world.pl line 5.
 
 numbers don't need quoting. (A couple of exceptions exist, but we won't go into them here)
+
+say 0;
+
+Hey, 0 is a number (well, it is technically a concept, but we won't go into deep maths here)
+
+Slide 5
 
 ### Maths
 
@@ -22,9 +30,13 @@ say 9/3; # division
 The standard 4 mathematical operations are available to you here, with no need to do anything special. If you are new
 to programming at all, * represents multiplication and / division
 
+Slide 6
+
 say 3**2; # square
 
 say 4**4; # (4 to the power of 4)
+
+Slide 7
 
 ### do something that affects strings ordinarily
 
@@ -32,9 +44,7 @@ say 1 . 1; # this is a string function, so coerces the integers into strings, an
 
 We have just joined (concatenated) the two parts together
 
-say 0;
-
-Hey, 0 is a number (well, it is technically a concept, but we won't go into deep maths here)
+Slide 8
 
 ### boolean numbers
 

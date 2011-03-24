@@ -30,7 +30,9 @@ say 1 if 0; # this is boolean untrue
  
 say 2 if '0 but true'; # because of the word value, it is considered true
 
-say '0 but true' + 25; # because of 0, it is still able to do number functions, one colleague has used perl for 15 years, and never used this
+say '0 but true' + 25; # because of 0, it is still able to do number functions
+
+# Note - one colleague has used perl for 15 years, and never used '0 but true'
 
 say 3 if '0'; # this is still false
 
