@@ -1,11 +1,6 @@
 Perl stands for:
 
-Practical Extraction and Report Language
-
-However this is a backronym, and originally was named "Pearl" after the Parable of the Pearl from the Gospel of Matthew.
-However, shortly before release, Larry discovered the PEARL programming language, and so changed the spelling of the name.
-
-Several other backronyms have been suggested, including Larry's own humorous Pathologically Eclectic Rubbish Lister.
+Slides 2&3
 
 Development:
 
@@ -33,6 +28,17 @@ Perl5 has moved now to a yearly release cycle, with 5.12 release in 2010, and 5.
 5.8.8 probably remains the most used version, and all new versions are attempting to maintain as much backwards
 compatibility as possible with this, since substantial amounts of code rely on the feature set here.
 
+Slide 4
+
+Practical Extraction and Report Language
+
+However this is a backronym, and originally was named "Pearl" after the Parable of the Pearl from the Gospel of Matthew.
+However, shortly before release, Larry discovered the PEARL programming language, and so changed the spelling of the name.
+
+Several other backronyms have been suggested, including Larry's own humorous Pathologically Eclectic Rubbish Lister.
+
+Slide 12
+
 Applications:
 
 Perl applications are heavily used in a number of situations, ranging from sysadmin support and GUI's to
@@ -41,6 +47,8 @@ bioinformatics and high traffic web sites.
 Because of the CPAN, we have access to a plethora of code which supports these applications. e.g. CGI for
 websites (along with many frameworks on top of this), BioPerl (which gives you access to a multitude of
 BioInformatics tools).
+
+Slide 13
 
 Licensing:
 

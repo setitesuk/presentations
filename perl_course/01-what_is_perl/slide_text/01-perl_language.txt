@@ -1,3 +1,5 @@
+Slides 5->10
+
 Perl is an Interpreted language.
 
 For Perl programs to run, they must be run 'through' an interpreter program. This
@@ -34,6 +36,10 @@ Perl supports multiple programming paradigms.
 
 As well as procedural, it supports Object Oriented and Functional programming styles,
 as well as other features.
+
+Slide 11
+
+Slogans
 
 'There's more than one way to do it' and 'Easy things should be easy and hard things should be possible'
 
