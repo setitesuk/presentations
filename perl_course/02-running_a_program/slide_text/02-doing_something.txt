@@ -1,3 +1,5 @@
+Slide 9
+
 Now, there is little point having a script which executes, but does nothing. So whilst we
 only need:
 
@@ -6,6 +8,14 @@ only need:
 It's not very helpful. Let's add:
 
 print 'Hello World!';
+
+Let's run it!
+
+ajb>bin/hello_world.pl
+Hello World!ajb>
+
+
+Slide 10
 
 This shows you an instruction (statement) in perl. Let's take a look:
 
@@ -23,12 +33,9 @@ This means that we are telling perl to print to the greeting Hello World!
 
 This is possibly the most important part of the whole statement. It finishes our
 statement, and tells perl that it can now 'do' whatever it has just read. Leaving
-this out can cause problems.
+this out will cause problems.
 
-So, we run bin/hello_world.pl
-
-ajb>bin/hello_world.pl
-Hello World!ajb>
+Slide 11
 
 Comments:
 
