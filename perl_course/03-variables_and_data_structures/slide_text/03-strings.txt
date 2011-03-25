@@ -1,3 +1,5 @@
+Slide 13
+
 Strings
 
 A string is any quoted value featuring letters, whitespace and punctuation.
@@ -10,11 +12,23 @@ If we look at bin/02-string.pl:
 
 say 'Hello World';
 
+Strings need to be quoted
+
+say "Hello World";
+
+Either single or double quotes.
+
+Slide 14
+
+### Length
+
 say length 'Hello World'; # get the length of a string
 
 the length function will give us the length of the string. You should note here that Perl is trying
 to work from right to left. So it gets a string 'Hello World', then passes this to the function 'length'
 and the the output of this is passed to 'say'.
+
+Slide 15
 
 ### Manipulating the string
 
@@ -26,15 +40,23 @@ say ucfirst 'tactgattacacattact'; # upper case the first letter
 These features are very useful if you are expecting inputs (we'll look at those later) which could
 be randomly put in by the user, but you want in a perfect manner;
 
+Slide 16
+
 i.e.
 
 User inputs name ANdrEw
 
 say ucfirst lc 'ANdrEw';  # result Andrew
 
+Slide 17
+
+### Concatenate
+
 say 'Hello' . 'World'; # concatenate
 
 We saw concatenating two numbers previously. Now we are using strings.
+
+Slide 18
 
 ### Introducing different whitespace characters
 
@@ -45,6 +67,8 @@ standard character representation, but we need to use double quotes rather than 
 This tells Perl that there are things to interpolate as it evaluates the string. (We'll see
 more of this later)
 
+Slide 19
+
 ### Boolean strings
 
 say ''; # empty string, this is boolean false
@@ -52,6 +76,8 @@ say ''; # empty string, this is boolean false
 say 'true string' if 'true'; # any string is true apart from the empty string
 
 say 'true empty string' if ''; # this won't be shown, as empty string is false
+
+Slide 20
 
 ### producing sequences
 
@@ -64,6 +90,8 @@ say 'Hello'..'World;
 
 It might be a useful way to find all the words needed to change 'flax' to 'gold', but you
 probably won't be wanting that very often.
+
+Slide 21
 
 ### Maths
 
@@ -79,6 +107,8 @@ say 'a' x 2; # x represents an repeat x times
 If you want to repeat your string a number of times, then x outside of quotes will do this. Common mistake
 is to think that * (multiply) will do it. However, that is a number function, and so will coerce to a number
 rather than 'try to do what is probably the right thing'
+
+Slide 22
 
 ### string testing
 
@@ -96,6 +126,8 @@ Unlike many other languages, whilst variables are dynamically typed, the functio
 string or numbers. As such, when testing strings, we can't use ==/!=/>/<, as these only work for numbers. We have
 string equivalents.
 
+Slide 23
+
 ### comparisons
 
 The same is true with comparisons
@@ -105,6 +137,8 @@ say 'a' cmp 'a';
 say 'b' cmp 'a';
 
 say 'a' <=> 'b';  # not numeric warning, ends up 0
+
+Slide 24
 
           Number  String
 Equal       ==      eq

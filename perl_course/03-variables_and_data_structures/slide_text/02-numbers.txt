@@ -69,6 +69,8 @@ just quoting 0 doesn't make it true
 
 say 4 if 4; # any number other than 0 is true
 
+Slide 9
+
 ### floating points
 
 say 1.00; # truncates past the decimal point
@@ -77,6 +79,8 @@ say '1.00'; # acts as a string
 
 say 1.01;
 
+Slide 10
+
 ### producing sequences
 
 say 0..9; # generates a sequence of numbers
@@ -84,6 +88,7 @@ say 0..9; # generates a sequence of numbers
 The double dot operator doesn't concatenate twice, but instead allows a sequence of consecutive numbers
 to be produced quickly
 
+Slide 11
 
 ### numerical testing
 
@@ -99,6 +104,7 @@ say 7 if ( 1 < 2 ); # rhv less than lhv
 
 # also >= and =<
 
+Slide 12
 
 ### comparisons
 

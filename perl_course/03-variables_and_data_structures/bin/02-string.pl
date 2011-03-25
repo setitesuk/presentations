@@ -6,6 +6,8 @@ use Modern::Perl;
 
 say 'Hello World';
 
+say "Hello World";
+
 say length 'Hello World'; # get the length of a string
 
 ### Manipulating the string
