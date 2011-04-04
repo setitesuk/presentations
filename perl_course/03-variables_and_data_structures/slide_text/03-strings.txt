@@ -147,6 +147,8 @@ Less Than   <       lt
 Gr Than     >       gt
 Compare    <=>      cmp
 
+Slide 25
+
 ### getting parts of a string
 
 say substr 'TACTGATTACACATTACT', 0, 4;
@@ -157,6 +159,8 @@ say substr 'TACTGATTACACATTACT', -5, 3; # -ve values count back from the end
 If you wanted to just find what bit of sequence is at a certain point, then you can use substr, and provide it
 with an index (so many in from the start - note the first character is 0, not 1), and a length
 
+Slide 26
+
 ### locating something within a string
 
 say index 'TACTGATTACACATTACT', 'GATTACA';
@@ -166,11 +170,15 @@ You can locate the position that you find something at, optionally skipping so m
 positions of all the codon 'TGA' we can generate loops (we'll look at these later) which finds the word, returns
 the index and then jumps forward to the end of it, and then looks for the next one
 
+Slide 27
+
 ### A warning when trying to do maths
 
 #say 20/'b'; # not numeric warning, divide by zero error
 
 Because strings will equate as 0, be careful you don't end up with one as the denominator in a division!
+
+Slide 28
 
 ### Other things to do with strings
 

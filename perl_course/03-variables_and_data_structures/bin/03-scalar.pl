@@ -13,11 +13,14 @@ say $string_scalar;
 
 ### What do I do with a scalar?
 
-say $string_scalar . $integer_scalar; # string concatenation
-
 say $integer_scalar + $integer_scalar; # numeric addition
 
+say $string_scalar . $integer_scalar; # string concatenation
+
 say $string_scalar * $integer_scalar; # gives warning that string_scalar isn't numeric, converts to 0 and so answer 0
+
+# what do you thing the following would do
+say $string_scalar x $integer_scalar; # x is a 'return this x times feature'
 
 ### Mix scalars and fixed values
 
@@ -25,8 +28,6 @@ say 'I can use a fixed string and concatenate to ' . $string_scalar;
 
 say 30 / $integer_scalar;
 
-# what do you thing the following would do
-say $string_scalar x $integer_scalar; # x is a 'return this x times feature'
 
 ### Interpolate scalars
 
