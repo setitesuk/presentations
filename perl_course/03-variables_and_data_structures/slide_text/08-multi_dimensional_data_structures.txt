@@ -1,7 +1,14 @@
-#!/Users/ajb/dev/bin/perl -w
+Slide 91
 
-use Modern::Perl;
+So an array or hash can be referenced and that can be stored in a scalar 'box'
 
+As arrays or hashes contain scalar boxes, we can put references in those boxes as well
+
+bin/07-multi_dimensional_data_structures.pl
+
+Slide 92
+
+If you take a look inside bin/07-multi_dimensional_data_structures.pl, we can see at the start 2 ordinary hashes
 
 my %amino_acid_3_letter_codes = (
   Alanine => 'Ala',
@@ -93,14 +100,20 @@ my %amino_acid_bases = (
  	GGG => 'Glycine',
 );
 
-# lots of repeated data, how can we produce one data structure with all the information
-# because a reference sits in the place of a scalar, we can have arrays and hashes with
-# references to other arrays and hashes in their 'values' slot
+The first thing to note is that there is lots of repeated data inside the 2nd hash
+
+But, we could change that around, so that the codons are in an array, which match the name, using arrayrefs 
 
 # e.g.
 
+#foreach my $key ( sort keys %amino_acid_bases ) {
+#  push @{ $codes_per_amino_acid{ $amino_acid_bases{$key} } }, $key; 
+#}
+
+Slide 94
+
 my %codes_per_amino_acid = (
-   Alanine => [ 'GCA', 'GCC', 'GCG','GCT'], # we are instantiating an anonymous array into the scalar that would be at $codes_per_amino_acid{Alanine}
+   Alanine => [ 'GCA', 'GCC', 'GCG','GCT'],
    Arginine => [ 'AGA', 'AGG', 'CGA', 'CGC', 'CGG', 'CGT' ],
    Asparagine => [ 'AAC', 'AAT' ],
    'Aspartic acid' => [ 'GAC', 'GAT' ],
@@ -123,9 +136,22 @@ my %codes_per_amino_acid = (
    Valine => [ 'GTA', 'GTC', 'GTG', 'GTT' ],
 );
 
+We are instantiating an anonymous array into the scalar that would be at $codes_per_amino_acid{Alanine}
+
+
+#use Test::More; diag explain \%codes_per_amino_acid;
+
+Slide 95
 
 # But of course, this still leaves us with two hashes, which have data which are linked. Couldn't we get to one? Yes
 
+#foreach my $key ( sort keys %codes_per_amino_acid ) {
+#  $genetic_code_data{ $key } = {}; # we set up an anonymous hash for each scalar point we want
+#  $genetic_code_data{ $key }->{ codons } = $codes_per_amino_acid{$key}; # already an array reference, we are just copying the memory pointer
+#  $genetic_code_data{ $key }->{ '3_letter_code' } = $amino_acid_3_letter_codes{ $key };
+#}
+
+#diag explain \%genetic_code_data;
 my %genetic_code_data = (
   'Alanine' => {
     '3_letter_code' => 'Ala',
@@ -213,7 +239,11 @@ my %genetic_code_data = (
   }
 );
 
-say $genetic_code_data{Methionine}{'3_letter_code'};
+Slide 96
+
+How do we access the data in a multidimensional structure?
+
+say $genetic_code_data{Methionine}{3_letter_code};
 say $genetic_code_data{Methionine}{codons}[0];
 
 
@@ -227,8 +257,10 @@ my @multiplication_table = (
   [ qw{ 0 4 8 12 16 20 24 28 32 36 40 } ],
 );
 
-say $multiplication_table[3][5]; #obviously you would do 'say 3*5;' rather than store this in memory
+say $multiplication_table[3][5];
 
-# the array @table_data contains an array of array_refs, each one a row from a table
+obviously you would do 'say 3*5;' rather than store this in memory
+
+the array @table_data contains an array of array_refs, each one a row from a table
 
 
