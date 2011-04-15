@@ -53,8 +53,8 @@ Whilst they all look different, the perl interpreter knows how to utilise the wa
 
   if ( $true )              # the braces indicate the lit of items to pass to if
   if $true                  # there is a single item, but this is passed to if as the first item of a list
-  print 'true'              # we pass a single string as the first item af a list to print
-  say 'Hello World'         # we pass a single string as the first item af a list to say
+  print 'true'              # we pass a single string as the first item of a list to print
+  say 'Hello World'         # we pass a single string as the first item of a list to say
   read_file( 'data_file' )  # we pass a list of items, containing 'data_file' to read_file
 
 What we know from this that functions require a list of parameters.
