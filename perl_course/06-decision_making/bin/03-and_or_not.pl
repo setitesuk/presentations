@@ -11,13 +11,13 @@ my $also_true = 2;
 my $false = 0;
 my $also_false = 0;
 
-if ( $true && $also_false ) {
+if ( $true && $also_true ) {
   say 'true && also_true is true';
 }
 
 unless ( $true && $false ) {
   say 'true && false is not true'
-}
+} # note: using unless
 
 unless ( $false and $also_false ) {
   say 'false and also_false not true';
@@ -41,6 +41,15 @@ unless ( $false or $also_false ) {
   say 'false or also_false is false';
 }
 
+# ! / not
+
+if ( ! $false ) {
+  say 'false has been made true with !';
+}
+if ( not $also_false ) {
+  say 'also_false has been made true with not';
+}
+
 # && / || have higher preference than and / or, best not to mix to behave as you expect
 
 # we can mix and match groups of true/false 
@@ -54,20 +63,18 @@ if ( $false
 
 # does sequence contain a methionine and stop (may be a gene)
 
-my $sequence = 'CCGGATCACTATGACCTGCTTTCGCACCTGCTCGCGCCGTCACGCTCGCACTC';
+my $sequence = 'CCGGATCACTATGACCTG';
 
-if ( $sequence =~ m/atg/ixms
+if ( $sequence =~ m/atg/im
       &&
-     ( $sequence =~ m/TAA/ixms || $sequence =~ m/TAG/ixms || $sequence =~ m/TGA/ixms )
+     ( $sequence =~ m/TAA/im || $sequence =~ m/TAG/im || $sequence =~ m/TGA/im )
   ) {
     say 'contains a methionine codon and a stop codon';
 }
 
-# ! inverts the boolean value of operation/block, use when you want an if/else block, but would use unless otherwise
-
-if ( $sequence =~ m/atg/ixms
+if ( $sequence =~ m/atg/im
       &&
-      ! ( $sequence =~ m/CAA/ixms || $sequence =~ m/CAG/ixms )
+      ! ( $sequence =~ m/CAA/im || $sequence =~ m/CAG/im )
   ) {
     say 'contains a methionine codon and not a glutamine codon';
 }
@@ -80,7 +87,7 @@ say 'truth: ' . $truth;
 
 # line up many, cut out as soon as a true value found
 
-$truth = $false || $also_true || $true;
+$truth = $false || $also_true || 'I am a truthful string';
 
 say 'truth: ' . $truth;
 
@@ -96,7 +103,7 @@ $truth ||= $true;
 
 say 'truth: ' . $truth;
 
-$truth = 0;
+$truth = 0; # remember, 0 is false
 
 $truth ||= {}; # you can see this sort of thing a lot when we explore functions and objects
 

@@ -39,18 +39,18 @@ say '0 is false' unless 0;
 # else
 # use with the block form of if to give you another thing to do
 
-my $sequence = 'CCGGATCACTATGACCTGCTTTCG';
+my $seq = 'CCGGATCACTATGACCTGCTTTCG';
 
-if ( $sequence =~ m/ATG/ixms ) {
-  say "$sequence contains Methionine";
+if ( $seq =~ m/ATG/im ) {
+  say "$seq contains Methionine";
 } else {
-  say "$sequence contains that damned cat again";
+  say "$seq contains that damned cat again";
 }
 
-my $clone = $sequence;
-$clone =~ s/atg/cat/gixms;
+my $clone = $seq;
+$clone =~ s/atg/cat/gim;
 
-if ( $clone =~ m/ATG/ixms ) {
+if ( $clone =~ m/ATG/im ) {
   say "$clone contains Methionine";
 } else {
   say "$clone contains that damned cat again";
@@ -59,35 +59,35 @@ if ( $clone =~ m/ATG/ixms ) {
 # elsif
 # again, with the block form of if, allows you to keep trying different 'true's until you find the one that you want
 
-if ( $clone =~ m/ATG/ixms ) {
+if ( $clone =~ m/ATG/im ) {
   say "$clone contains Methionine";
-} elsif ( $clone =~ m/dog/ixms ) {
-  say "$clone could possibly be from another planet, or this isn't DNA";
-} elsif ( $clone =~ m/aaa/ixms ) {
+} elsif ( $clone =~ m/dog/im ) {
+  say "$clone from foreign planet, or this isn't DNA";
+} elsif ( $clone =~ m/aaa/im ) {
   say "$clone has my favourite codon in it";
 } else {
   say "$clone contains that damned cat again";
 }
 
-$clone =~ s/cat/dog/gixms;
+$clone =~ s/cat/dog/gim;
 
-if ( $clone =~ m/ATG/ixms ) {
+if ( $clone =~ m/ATG/im ) {
   say "$clone contains Methionine";
-} elsif ( $clone =~ m/dog/ixms ) {
-  say "$clone could possibly be from another planet, or this isn't DNA";
-} elsif ( $clone =~ m/aaa/ixms ) {
+} elsif ( $clone =~ m/dog/im ) {
+  say "$clone from foreign planet, or this isn't DNA";
+} elsif ( $clone =~ m/aaa/im ) {
   say "$clone has my favourite codon in it";
 } else {
   say "$clone contains that damned cat again";
 }
 
-$clone =~ s/dog/aaa/gixms;
+$clone =~ s/dog/aaa/gim;
 
-if ( $clone =~ m/ATG/ixms ) {
+if ( $clone =~ m/ATG/im ) {
   say "$clone contains Methionine";
-} elsif ( $clone =~ m/dog/ixms ) {
-  say "$clone could possibly be from another planet, or this isn't DNA";
-} elsif ( $clone =~ m/aaa/ixms ) {
+} elsif ( $clone =~ m/dog/im ) {
+  say "$clone from foreign planet, or this isn't DNA";
+} elsif ( $clone =~ m/aaa/im ) {
   say "$clone has my favourite codon in it";
 } else {
   say "$clone contains that damned cat again";
@@ -97,11 +97,11 @@ if ( $clone =~ m/ATG/ixms ) {
 
 $clone .= 'atg';
 
-if ( $clone =~ m/ATG/ixms ) {
+if ( $clone =~ m/ATG/im ) {
   say "$clone contains Methionine";
-} elsif ( $clone =~ m/dog/ixms ) {
-  say "$clone could possibly be from another planet, or this isn't DNA";
-} elsif ( $clone =~ m/aaa/ixms ) {
+} elsif ( $clone =~ m/dog/im ) {
+  say "$clone from foreign planet, or this isn't DNA";
+} elsif ( $clone =~ m/aaa/im ) {
   say "$clone has my favourite codon in it";
 } else {
   say "$clone contains that damned cat again";
@@ -113,21 +113,4 @@ if ( $clone =~ m/ATG/ixms ) {
 # to use put the most commonly expected match as high up the list as possible
 
 # you can have as many elsif blocks as you like
-
-# A neater way of doing things if trying to assign a variable
-
-my $true = 1;
-
-my $name = $true ? 'Andrew' : 'Andy';
-
-say $name;
-
-my $false;
-
-$name = $false ? 'Andrew' : 'Andy';
-
-say $name;
-
-
-
 

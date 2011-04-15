@@ -9,7 +9,7 @@ my $count = 0;
 
 while ( $count < $true_comparison ) {
   say 'while version : ' . $count;
-  $count++;
+  $count++; # increment count
 }
 
 # until - less used version, try not to use unless it is not readable with while
