@@ -52,14 +52,6 @@ sub ta_count {
 }
 
 
-
-
-
-
-
-
-
-
 # a length method
 sub sequence_length {
   my ( $sequence ) = @_;

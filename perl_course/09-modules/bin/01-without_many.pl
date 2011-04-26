@@ -25,18 +25,3 @@ sub write_sequences_with_amino_acid_codes_to_file {
   write_file( 'output/sequences_with_codons_present.txt', @results );
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

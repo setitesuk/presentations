@@ -76,19 +76,3 @@ sub amino_acid_codes {
   return %amino_acid_codes;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -12,7 +12,7 @@ sub find_amino_acid {
 
   foreach my $codon ( @{ $amino_acid_data->{codons} } ) {
 
-    if ( $sequence =~ m/$codon/ixms ) {
+    if ( $sequence =~ m/$codon/im ) {
       $return = $amino_acid_data->{'3_letter_code'};
       last;
     }
