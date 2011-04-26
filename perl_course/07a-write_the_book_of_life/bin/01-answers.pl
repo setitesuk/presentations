@@ -26,7 +26,7 @@ my @named_reads;
 
 foreach my $read ( @reads ) {
   # split each read on the whitespace into elements
-  my @data = split /\s+/xms, $read;
+  my @data = split /\s+/m, $read;
   # take an array slice of the first 6 elements, and join them together to make a unique name
   my $name = join '_', (@data[0..5]);
   # join the name, the read and the quality strings together with a newline character,
@@ -49,7 +49,7 @@ open my $fh_write, '>', 'output/named_reads_with_filehandles.txt' or die ' could
 # loop over the reads found in the file
 while ( <$fh_read> ) {
   # split each read on the whitespace into elements
-  my @data = split /\s+/xms, $_;
+  my @data = split /\s+/m, $_;
   # take an array slice of the first 6 elements, and join them together to make a unique name
   my $name = join '_', (@data[0..5]);
   # join as previously, but print directly out to the filehandle for writing

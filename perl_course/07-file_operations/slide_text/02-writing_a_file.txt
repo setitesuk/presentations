@@ -32,11 +32,9 @@ foreach my $seq ( @sequences ) {
 }
 
 # In this loop, as we process the elements, we print to the filehandle our data.
-# The advantage of this is that if it takes a lot of processing to create each sequence, then we
-# can print as we generate each sequence, rather than collect them all in one go
+# The advantage of this is that if it takes a lot of processing to create each sequence, then we can print as we generate each sequence, rather than collect them all in one go
 
-# we put the filehandle in {} so that the interpreter knows that it is 'where to print to', rather than
-# needing to check at runtime if it is a variable to print, or something to print to
+# we put the filehandle in {} so that the interpreter knows that it is 'where to print to', rather than needing to check at runtime if it is a variable to print, or something to print to
 
 close $fh or die 'could not close filehandle: ' . $fh;
 

@@ -12,7 +12,7 @@ say $slobbit;
 
 ### we can do something to it
 
-$slobbit =~ s/Andy/Bilbo/gxms;
+$slobbit =~ s/Andy/Bilbo/gm;
 
 say 'Hero changed';
 say $slobbit;
@@ -26,7 +26,7 @@ my @reads = read_file( 'data/1234_1_qseq.txt' );
 say @reads;
 
 foreach my $read ( @reads ) {
-  my @data = split /\s+/xms, $read;
+  my @data = split /\s+/m, $read;
   say $data[8];
 }
 

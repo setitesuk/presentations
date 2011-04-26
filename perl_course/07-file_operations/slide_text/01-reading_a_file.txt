@@ -28,7 +28,7 @@ say $slobbit;
 # we can do something to it
 # Nobody wants me to be the hero of the story - $hobbit is just a string
 
-$slobbit =~ s/Andy/Bilbo/gxms;
+$slobbit =~ s/Andy/Bilbo/gm;
 
 say 'Hero changed';
 say $slobbit;
@@ -47,7 +47,7 @@ say @reads;
 # We want just the DNA sequences
 
 foreach my $read ( @reads ) {
-  my @data = split /\s+/xms, $read;
+  my @data = split /\s+/m, $read;
   say $data[8];
 }
 
