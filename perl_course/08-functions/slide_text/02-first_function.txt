@@ -30,7 +30,7 @@ Run some perl code within the block
 
   return <values>;
 
-We want to return to the caller, and pass back any values we have created (as the scope will stop them being visible outside of the function). We can pass back either nothing, a scalar or an array.
+We want to return to the caller, and pass back any values we have created (as the scope will stop them being visible outside of the function). We can pass back either undef (nothing), a scalar or an array.
 
 }
 
@@ -93,7 +93,7 @@ Yes, but can you already see that instead of writing
 
   if ( $sequence =~ m/ATG/ixms ) {
 
-three, I have only written
+three times, I have only written
 
   if ( find_methionine( $sequence ) ) {
 

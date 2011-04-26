@@ -4,7 +4,7 @@ However, we are likely to want to see if the sequence contains more than just me
 
 Could we improve so we only need one function?
 
-Yes. We can pass in any number of parameters, not just the sequence. So, why not pass in the codon or amino acid we want to count as well.
+Yes. We can pass in any number of parameters, not just the sequence. So, why not pass in the codon or amino acid we want to find as well.
 
 sub find_amino_acid_by_codon {
   my ( $sequence, $codon ) = @_;

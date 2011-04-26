@@ -4,7 +4,7 @@ Lets try and extend the function so that we can see if the amino acid is present
 
 
 sub find_amino_acid {
-# we change the name to be more generis
+# we change the name to be more generic
 
   my ( $sequence, $amino_acid ) = @_;
 # and do the same for the variable, as $codon suggests a sequence
@@ -32,7 +32,7 @@ sub find_amino_acid {
       last;
     }
 
-# and do our match - we only care if we see a match, so lets get out if we as soon as we match to improve speed
+# and do our match - we only care if we see a match, so lets get out as soon as we match to improve speed
 
   }
 
@@ -59,8 +59,8 @@ foreach my $amino_acid ( qw{Alanine Lysine Methionine Stop} ) {
     } else {
       say "\tNot Found";
     }
-# we only want to say found or not found here, wince we know the function will report what sequence was looked at, and what amino acid was looked for
+# we only want to say found or not found here, since we know the function will report what sequence was looked at, and what amino acid was looked for
   }
 }
 
-Functions can call other functions, and within them you can do anything that you could do elsewhere in Perl. They are like a mini-script that has parameters passed in, and is most likely to be returning values back to the 
+Functions can call other functions, and within them you can do anything that you could do elsewhere in Perl. They are like a mini-script that has parameters passed in, and is most likely to be returning values back to the main script

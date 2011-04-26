@@ -93,20 +93,3 @@ sub find_amino_acid {
   return $return;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

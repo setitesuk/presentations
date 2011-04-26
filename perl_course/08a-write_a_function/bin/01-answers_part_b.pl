@@ -89,22 +89,3 @@ foreach my $sequence ( @sequences ) {
 
 write_file( 'output/sequences_with_codons_present.txt', @results ); # write our capture array to the file
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
