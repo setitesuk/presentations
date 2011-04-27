@@ -29,7 +29,7 @@ saucepan - contains water, soup
 
 teabag - has methods fresh, is_used
 
-With the advent of Perl5, the designers decided to implement an Object system into Perl. So that a Perl project could become object oriented if the developer of that project wished it. What actually happened was that Perl virtually became Object Oriented, and left procedural scripts to be only when objects were really to much to do.
+With the advent of Perl5, the designers decided to implement an Object system into Perl. So that a Perl project could become object oriented if the developer of that project wished it. What actually happened was that Perl virtually became Object Oriented, and left procedural scripts to be only when objects were really to much.
 
 Because Object Orientation is an add on, it is slower than procedural, but has some nice advantages, such as allowing us to abstract away sourcing the data and methods which manipulate it, from code that displays it to the user (or saves it to a file).
 

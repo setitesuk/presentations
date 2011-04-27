@@ -8,11 +8,11 @@ Perl one-liners are exactly what they say on the tin. A perl script, in one line
 
 Just try typing the following on the command line:
 
-perl -le 'print q{Hello World}'
+/software/perl -le 'print q{Hello World}'
 
 Lets look at it
 
-perl
+/software/perl
 
 The first argument of any command line is the executable you want to run. In this case, we'll run the perl interpreter.
 

@@ -9,6 +9,4 @@ has 'sequence' => (
 );
 
 
-
-
 1;

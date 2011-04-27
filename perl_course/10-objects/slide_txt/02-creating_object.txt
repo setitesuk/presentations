@@ -35,8 +35,9 @@ my $sequence_manipulator = SequenceManipulator->new(); # create the object
 
 Moose gives automatically gives our class module the method new, which we call using the arrow (->) operator.
 
-You'll remember us using that to get at key-values or index-values in reference data structures. This is very much
-the same principal. If we take a look at the variable $sequence_manipulator:
+You'll remember us using that to get at key-values or index-values in reference data structures. This is very much the same principal.
+
+If we take a look at the variable $sequence_manipulator:
 
 say $sequence_manipulator; # SequenceManipulator=HASH(0x8100e0)
 
@@ -55,7 +56,4 @@ We see our package or class name, with the = sign. This tells us that the HASH r
 (It is worth noting that you might sometimes see ARRAY or SCALAR instead of HASH - don't worry, you use them all the same way)
 
 Let's add some attributes.
-
-
-
 

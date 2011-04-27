@@ -8,7 +8,7 @@ pour_contents
 water_is_cold
 water_is_hot
 
-What we can see is that the methods this object has are related to the attributes is would have
+What we can see is that the methods this object has are related to the attributes it would have
 
 contains_water
 
@@ -28,7 +28,7 @@ change_base
 
 We have seen some of these before? Why might it be better to keep them in the object, with the sequence, rather than outside (just exported from another module - after all, being in a module makes it reusable)
 
-The point is, if you keep you data and the methods which manipulate it close, the code becomes clearer.
+The point is, if you keep your data and the methods which manipulate it close, the code becomes clearer.
 
 The method length could mean anything, part of the dimensions of a piece of office furniture, requested length for a table to be, time portion,...
 
@@ -150,12 +150,4 @@ sub find_film_name {
 
 As useful as it might be to find the title of a film starring Uma Thurman in the sequence, it isn't something that is
 highly useful, so probably best to leave it out. If IMDB want to use your module to do that, then they still could use the module as a store of sequence, and then write a function in the script to compare the film name.
-
-
-
-
-
-
-
-
 

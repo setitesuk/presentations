@@ -1,6 +1,6 @@
 Adding Attributes
 
-When we discussed the cup as an object, we said it had attibutes such as
+When we discussed the cup as an object, we said it had attributes such as
 
 water
 teabag
@@ -10,7 +10,7 @@ lemon
 
 which we could look at in terms of presence of them. Does the cup have water in it? Yes/No
 
-Or we could simply to the attribute 'contents', which could have a list of the above items.
+Or we could simply have the attribute 'contents', which could have a list of the above items.
 
 Attributes are just that, they are the contents of the object. We tend to make things easier
 on ourselves by making the attributes relevant to the object
