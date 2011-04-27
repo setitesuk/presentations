@@ -34,7 +34,7 @@ i.e. find_sequence rather than find_codon
 
 3) Object
 
-If your functions need to be very specific, or you are trying to represent data, they you should consider making an object. If you want to produce sequence, then you want a sequencing machine, which is an object, so make it so in code. If you have data representing amino acids, and bundle that data as an amino acid object.
+If your functions need to be very specific, or you are trying to represent data, then you should consider making an object. If you want to produce sequence, then you want a sequencing machine, which is an object, so make it so in code. If you have data representing amino acids, and bundle that data as an amino acid object.
 
 Important features:
 
