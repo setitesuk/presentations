@@ -13,7 +13,7 @@ is( # call the imported 'is' method, with parameters
 
 We run the script with prove
 
-prove -v t/hello_world.t
+>prove -v t/hello_world.t
 
 -v means run in verbose mode
 generally, test files live in the t/ directory, to keep them separate from code you might deploy, and always have a .t extension

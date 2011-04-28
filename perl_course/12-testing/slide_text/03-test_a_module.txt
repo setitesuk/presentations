@@ -8,7 +8,7 @@ Lets test the DnaHelpers module we wrote before.
 
 use Test::More tests => 3; # This time there will be 3 tests
 
-use_ok ( 'DnaHelpers' ); # test that we can use the module ok - this checks it will compile and get the code for us
+use_ok ( 'DnaHelpers' ); # test that we can use the module ok - this checks it will compile and gets the code for us
 
 my $sequence = 'ACATCAGATCGTAGCTGCTCGCTGCGATATGC';
 my %amino_acids = (
