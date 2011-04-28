@@ -1,3 +1,3 @@
-#!/Users/ajb/dev/bin/perl -w
+#!/software/perl -w
 
 print 20/0;
