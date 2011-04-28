@@ -216,7 +216,7 @@ my %genetic_code_data = (
 say $genetic_code_data{Methionine}{'3_letter_code'};
 say $genetic_code_data{Methionine}{codons}[0];
 
-
+__END__
 # It is possible to have arrayrefs in as well. For example
 
 my @multiplication_table = (
