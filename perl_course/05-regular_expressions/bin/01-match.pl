@@ -13,6 +13,8 @@ if ( $sequence =~ m/ATG/i ) {
   say 'Sequence contains Methionine';
 }
 
+__END__
+
 # does it contain a number (\d represents a digit, + is 1 or more)
 
 if ( $sequence =~ m/\d+/ ) {
@@ -25,11 +27,15 @@ if ( $sequence !~ m/\d+/ ) {
   say 'Sequence does not contain a number';
 }
 
+__END__
+
 # does it contain a word character ( \w )
 
 if ( $sequence =~ m/\w+/ ) {
   say 'Sequence contains word characters';
 }
+
+__END__
 
 # does it contain a whitespace character ( \s ) - this includes \t (tab), \n (newline), ' ' (space)
 
@@ -39,11 +45,15 @@ if ( $lyrics =~ m/\s/ ) {
   say 'Lyrics contain whitespace';
 }
 
+__END__
+
 # we can capture information from the regex
 
 my ( $silhoutte ) = $lyrics =~ m/\s(silhoutte)\s/i;
 
 say $silhoutte;
+
+__END__
 
 # we can even capture all words like this
 # capture the first word
@@ -56,16 +66,22 @@ say $first_word;
 my ( $last_word ) = $lyrics =~ m/\s(\w+)\s*\z/m; 
 say $last_word;
 
+__END__
+
 # regex + and * are greedy (they match the maximum that they can)
 # my $sequence = 'CCGGATCACTATGACCTGCTTTCGCACCTGCTCGCGCCGTCACGCTCGCAGTC';
 
 my ( $greedy_match ) = $sequence =~ /(\w+ACC)/;
 say $greedy_match;
 
+__END__
+
 # to make not greedy, add ?
 
 my ( $non_greedy_match ) = $sequence =~ /(\w+?ACC)/;
 say $non_greedy_match;
+
+__END__
 
 # we can match user defined matches
 
@@ -74,6 +90,9 @@ my $user_wants_to_find_this_sequence = 'ttt';
 if ( $sequence =~ /$user_wants_to_find_this_sequence/i ) {
   say "User sequence $user_wants_to_find_this_sequence found.";
 }
+
+__END__
+
 ####### what do i and m represent?
 
 # what are the letters afterwards
