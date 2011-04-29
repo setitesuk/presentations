@@ -13,6 +13,8 @@ if ( 'cat' eq 'cat' ) {
   say 'cat' eq 'cat';
 }
 
+__END__
+
 # not equals
 
 

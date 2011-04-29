@@ -16,10 +16,14 @@ if ( $this ) {
   say $this;
 }
 
+__END__
+
 # postfix form
 say $that if $that;
 
 # Advice: only use the post fix form if simple action and simple test of true
+
+__END__
 
 # unless
 # The opposite of if
@@ -36,6 +40,8 @@ say '0 is false' unless 0;
 
 # varying arguments for and against the use of unless, partly because you can't extend the block form with else.
 
+__END__
+
 # else
 # use with the block form of if to give you another thing to do
 
@@ -47,6 +53,8 @@ if ( $seq =~ m/ATG/im ) {
   say "$seq contains that damned cat again";
 }
 
+__END__
+
 my $clone = $seq;
 $clone =~ s/atg/cat/gim;
 
@@ -55,6 +63,8 @@ if ( $clone =~ m/ATG/im ) {
 } else {
   say "$clone contains that damned cat again";
 }
+
+__END__
 
 # elsif
 # again, with the block form of if, allows you to keep trying different 'true's until you find the one that you want
@@ -92,6 +102,8 @@ if ( $clone =~ m/ATG/im ) {
 } else {
   say "$clone contains that damned cat again";
 }
+
+__END__
 
 # will always short out at the first one it matches
 

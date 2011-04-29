@@ -12,6 +12,8 @@ while ( $count < $true_comparison ) {
   $count++; # increment count
 }
 
+__END__
+
 # until - less used version, try not to use unless it is not readable with while
 
 $count = 0;
@@ -20,6 +22,8 @@ until ( $count == $true_comparison ) {
   say 'until version : ' . $count;
   $count++;
 }
+
+__END__
 
 # for and foreach
 # both are actually interchangeable, although they should be used differently
@@ -30,12 +34,16 @@ foreach my $codon ( @codons ) { # fairly common to see for instead of foreach
   say 'foreach version : ' . $codon;
 }
 
+__END__
+
 for (my $i = 0; $i < @codons; $i++ ) { # almost never see foreach instead of for
   say 'for version : ' . $codons[$i];
 }
 
 # since this is the 'C' version, it is not liked in the community, as such would
 # suggest foreach and put a counter like while if you need to know the index
+
+__END__
 
 # you can also use while whilst looping over and array
 

@@ -15,6 +15,8 @@ if ( $true && $also_true ) {
   say 'true && also_true is true';
 }
 
+__END__
+
 unless ( $true && $false ) {
   say 'true && false is not true'
 } # note: using unless
@@ -22,6 +24,8 @@ unless ( $true && $false ) {
 unless ( $false and $also_false ) {
   say 'false and also_false not true';
 }
+
+__END__
 
 # || / or
 
@@ -33,6 +37,8 @@ if ( $true || $false ) {
   say 'true || false is true';
 }
 
+__END__
+
 if ( $false or $true ) {
   say 'false or true is true';
 }
@@ -40,6 +46,8 @@ if ( $false or $true ) {
 unless ( $false or $also_false ) {
   say 'false or also_false is false';
 }
+
+__END__
 
 # ! / not
 
@@ -49,6 +57,8 @@ if ( ! $false ) {
 if ( not $also_false ) {
   say 'also_false has been made true with not';
 }
+
+__END__
 
 # && / || have higher preference than and / or, best not to mix to behave as you expect
 
@@ -61,6 +71,8 @@ if ( $false
   say 'I got to true in the end';
 }
 
+__END__
+
 # does sequence contain a methionine and stop (may be a gene)
 
 my $sequence = 'CCGGATCACTATGACCTG';
@@ -72,12 +84,16 @@ if ( $sequence =~ m/atg/im
     say 'contains a methionine codon and a stop codon';
 }
 
+__END__
+
 if ( $sequence =~ m/atg/im
       &&
       ! ( $sequence =~ m/CAA/im || $sequence =~ m/CAG/im )
   ) {
     say 'contains a methionine codon and not a glutamine codon';
 }
+
+__END__
 
 # we can use || in assignment
 
@@ -90,6 +106,8 @@ say 'truth: ' . $truth;
 $truth = $false || $also_true || 'I am a truthful string';
 
 say 'truth: ' . $truth;
+
+__END__
 
 # we can stick in operations
 
