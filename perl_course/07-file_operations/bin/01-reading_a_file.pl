@@ -10,6 +10,8 @@ my $slobbit = read_file( 'data/the_slobbit' );
 
 say $slobbit;
 
+__END__
+
 ### we can do something to it
 
 $slobbit =~ s/Andy/Bilbo/gm;
@@ -17,6 +19,7 @@ $slobbit =~ s/Andy/Bilbo/gm;
 say 'Hero changed';
 say $slobbit;
 
+__END__
 
 # our data may be in some table like format, so we probably don't want it all in one scalar
 # slurp in a qseq file, with rows going into an array
@@ -25,10 +28,14 @@ my @reads = read_file( 'data/1234_1_qseq.txt' );
 
 say @reads;
 
+__END__
+
 foreach my $read ( @reads ) {
   my @data = split /\s+/m, $read;
   say $data[8];
 }
+
+__END__
 
 ### In many cases, always take advantage of File::Slurp
 

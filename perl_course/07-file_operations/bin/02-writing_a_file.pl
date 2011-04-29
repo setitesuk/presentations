@@ -47,6 +47,8 @@ my @sequences = (
 );
 write_file( 'data/short_reads.seq', @sequences );
 
+__END__
+
 ## manual writing using open
 
 open my $fh, '>', 'data/my_book' or die 'could not open data/my_book';
@@ -56,6 +58,8 @@ foreach my $seq ( @sequences ) {
 }
 
 close $fh or die 'could not close filehandle: ' . $fh;
+
+__END__
 
 ## I want to add some more to a file
 
