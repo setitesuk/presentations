@@ -60,16 +60,6 @@ say join "\n", @three_lines;
 
 __END__
 
-say @string_array x ( $integer_array[1] * $integer_array[2] ); # note, @string_array gets 'scalar'ed
-
-say join ' ', @string_array x ( $integer_array[1] * $integer_array[2] );
-
-say ( join ' ', @string_array ) x ( $integer_array[1] * $integer_array[2] );
-
-say ( ( join ' ', @string_array ) x ( $integer_array[1] * $integer_array[2] ) );
-
-__END__
-
 ### Iterating over arrays
 
 foreach my $int ( @integer_array ) {

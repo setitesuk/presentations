@@ -115,18 +115,6 @@ say join "\n", @three_lines;
 
 This is a bit over what you are likely to do, but we can make new arrays from data processed.
 
-Slide 52
-
-say @string_array x ( $integer_array[1] * $integer_array[2] ); # note, @string_array gets 'scalar'ed
-
-say join ' ', @string_array x ( $integer_array[1] * $integer_array[2] );
-
-say ( join ' ', @string_array ) x ( $integer_array[1] * $integer_array[2] );
-
-say ( ( join ' ', @string_array ) x ( $integer_array[1] * $integer_array[2] ) );
-
-When you want to process the data inside arrays, just retrieve it as a scalar and do the process.
-
 Slide 53 & 54
 
 ### Iterating over arrays

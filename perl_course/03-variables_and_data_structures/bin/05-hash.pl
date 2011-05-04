@@ -41,7 +41,7 @@ __END__
 
 # print all in keys alphanumerical order
 foreach my $key ( sort keys %string_key_any_value_hash ) {
-  say $key . q{ : } . $string_key_any_value_hash{$key};
+  say $key . ' : ' . $string_key_any_value_hash{$key};
 }
 
 __END__
