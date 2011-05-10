@@ -1,1 +1,0 @@
-#!/software/perl -w
